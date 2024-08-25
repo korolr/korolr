@@ -29,31 +29,49 @@ rTerm = function (options) {
     this.cdir = this.fsstart;
     this.uhsername = this.username + '@' + this.hostname;
 
-    this.data = {};
+    this.data = {
+    "fs": {
+        "home": {
+            "korolr": {
+                "github": "_link:https://github.com/korolr",
+                "blog": "_link:http://blog.korolr.dev",
+                "telegram": "_link:https://t.me/dockesrkek",
+                "steam": "_link:https://steamcommunity.com/id/korolr/",
+                "vndb": "_link:https://vndb.org/u134650",
+                "twitter": "_link:https://twitter.com/korolr22",
+                "mastodon": "_link:https://mastodon.social/@korolr",
+                "e-mail": "_link:mailto:alexey@ramzaev.org"
+            }
+        },
+        "etc": {
+          "motd": "Hi! Welcome to my personal page!"
+        },
+        "dev": {
+          "random": "_call:random",
+          "urandom": "_call:random"
+        }
+    },
+    "whoami": [
+        "I am Alexey, full-time js/ts developer",
+        "who is interested in things:",
+        " - frontend/backend development;",
+        " - privacy;",
+        " - psychology;",
+        " - music;"
+    ],
+    "uname": "Alexey Ramzaev",
+    "upstart": ["cat /etc/motd", "uname", "whoami", "ls"]
+};
     this.clicked = false;
 
     // Load data, call upstart commands and set callbacks
     this.init = function() {
-        $.getJSON(this.file, (function(data) {
-            this.data = data;
-
-            window.onblur = function() {
-                window.blurred = true;
-            };
-            window.onfocus = function() {
-                window.blurred = false;
-            };
-
-            if (this.data.upstart !== "undefined") {
                 var delay = this.callUpstart();
 
                 setTimeout(function() {
                     $(document).keydown(this.keyCallback);
                 }, delay);
-            } else {
-                $(document).keydown(this.keyCallback);
-            }
-        }).bind(this));
+            
 
         $("#" + this.divid).html(
           '<div id="term"> <span id="termcli">' + this.termPrev +

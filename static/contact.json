@@ -3,12 +3,13 @@
         "home": {
             "korolr": {
                 "github": "_link:https://github.com/korolr",
-                "blog": "_link:http://blog.korolr.me/",
-                "telegram": "_link:https://t.me/korolr",
+                "blog": "_link:http://blog.korolr.dev",
+                "telegram": "_link:https://t.me/dockesrkek",
                 "steam": "_link:https://steamcommunity.com/id/korolr/",
                 "vndb": "_link:https://vndb.org/u134650",
                 "twitter": "_link:https://twitter.com/korolr22",
-                "e-mail": "_link:mailto:Korolr@member.fsf.org"
+                "mastodon": "_link:https://mastodon.social/@korolr",
+                "e-mail": "_link:mailto:alexey@ramzaev.org"
             }
         },
         "etc": {
@@ -20,13 +21,13 @@
         }
     },
     "whoami": [
-        "A human from Balakovo and I like to do stuff and ",
-        "who interesting things:",
+        "I am Alexey, full-time js/ts developer",
+        "who is interested in things:",
         " - frontend/backend development;",
         " - privacy;",
-        " - psihology;",
-        " - music."
+        " - psychology;",
+        " - music;"
     ],
-    "uname": "Alexsey Ramzaev",
+    "uname": "Alexey Ramzaev",
     "upstart": ["cat /etc/motd", "uname", "whoami", "ls"]
 }

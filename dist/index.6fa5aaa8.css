@@ -1,0 +1,67 @@
+.gradient {
+  background: linear-gradient(#000, #353f7f);
+  height: calc(100vh - 478px);
+}
+
+.black {
+  background: #000;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #000;
+  height: 95%;
+}
+
+h1 {
+  text-align: center;
+  color: #999;
+  font-family: Catamaran, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.main {
+  margin-bottom: 35px;
+}
+
+@media (width <= 500px) {
+  h1 {
+    text-align: center;
+    color: #999;
+    font-family: Catamaran, sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  img {
+    display: none;
+  }
+
+  .gradient {
+    background: linear-gradient(#000, #353f7f);
+    height: calc(84vh - 50px);
+  }
+}
+
+a:-webkit-any-link {
+  color: #ba55d3;
+  cursor: default;
+  text-decoration: none;
+}
+
+.link {
+  color: #ba55d3;
+  cursor: default;
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.6fa5aaa8.css.map */
