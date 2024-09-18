@@ -50,3 +50,25 @@ a:-webkit-any-link {
     color: #ba55d3;
     cursor: default;
 }
+
+.webrings {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 15px;
+}
+
+.webrings a {
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Catamaran", sans-serif;
+    color: #999999;
+}
+
+.delimeter {
+    color: #999999;
+    padding: 5px;
+}
