@@ -14,7 +14,7 @@ rTerm = function (options) {
     // Starting path in fs
     this.fsstart = options.fsstart || "/home/" + this.username;
     // High of the terminal
-    this.height = options.height || 400;
+    this.height = options.height || 350;
     // Maximal number of strings
     this.maxStrings = options.maxStrings || 15;
     // Save string to server
